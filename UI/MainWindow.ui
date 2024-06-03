@@ -1,0 +1,1897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>987</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Vinhan</family>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>ChurnCast - MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/logo_app.png</normaloff>images/logo_app.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QWidget" name="IconOnly" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(2, 140, 202);
+}
+
+QPushButton {
+	color:rgb(255, 255, 255);
+	text-align:left;
+	font: 75 10pt &quot;Vinhan&quot;;
+	height:20px;
+	padding-left:1px;
+	border:none;
+	border-radius:3px;
+	border-radius:3px;
+}
+
+QPushButton:checked{
+	background-color: rgb(245, 250, 255);
+	color: rgb(0,0,0);
+	font-weight:bold;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>15</number>
+       </property>
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <property name="bottomMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-image: url(:/user main.png);</string>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>images/MainWindow/user main.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButtonViewIcon">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/MainWindow/view.png</normaloff>
+             <normalon>images/MainWindow/view.png</normalon>images/MainWindow/view.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>15</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonPredictIcon">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/MainWindow/predict.png</normaloff>
+             <normalon>images/MainWindow/predict.png</normalon>images/MainWindow/predict.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>15</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonChartIcon">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/MainWindow/chart.png</normaloff>
+             <normalon>images/MainWindow/chart.png</normalon>images/MainWindow/chart.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>15</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonGeneralicon">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/MainWindow/general.png</normaloff>
+             <normalon>images/MainWindow/general.png</normalon>images/MainWindow/general.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>15</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>187</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonLogOutIcon">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>images/MainWindow/out.png</normaloff>
+           <normalon>images/MainWindow/out.png</normalon>images/MainWindow/out.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="IconName" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(2, 140, 202);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton {
+	color:rgb(255, 255, 255);
+	text-align:left;
+	font: 75 10pt &quot;Vinhan&quot;;
+	height:20px;
+	padding-left:1px;
+	border:none;
+	border-radius:5px;
+	border-radius:5px;
+}
+
+QPushButton:checked{
+	background-color: rgb(245, 250, 255);
+	color: rgb(0,0,0);
+	font-weight:bold;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>15</number>
+       </property>
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <property name="bottomMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-image: url(:/user main.png);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>images/MainWindow/user main.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pushButtonView">
+           <property name="text">
+            <string>View Data</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/MainWindow/view.png</normaloff>
+             <normalon>images/MainWindow/view.png</normalon>images/MainWindow/view.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>15</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonPredict">
+           <property name="text">
+            <string>Predict</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/MainWindow/predict.png</normaloff>
+             <normalon>images/MainWindow/predict.png</normalon>images/MainWindow/predict.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>15</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonChart">
+           <property name="text">
+            <string>Chart</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/MainWindow/chart.png</normaloff>
+             <normalon>images/MainWindow/chart.png</normalon>images/MainWindow/chart.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonGeneral">
+           <property name="text">
+            <string>General</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/MainWindow/general.png</normaloff>
+             <normalon>images/MainWindow/general.png</normalon>images/MainWindow/general.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>12</width>
+             <height>12</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>187</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonLogOut">
+         <property name="text">
+          <string>Log Out</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>images/MainWindow/out.png</normaloff>
+           <normalon>images/MainWindow/out.png</normalon>images/MainWindow/out.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QWidget" name="Main" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(2, 140, 202);
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QWidget" name="Header" native="true">
+         <property name="styleSheet">
+          <string notr="true">QWidget {
+	background-color: rgb(81, 209, 244);
+}
+
+QPushButton {
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 9pt &quot;Vinhan&quot;;
+}
+</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButtonMenu">
+            <property name="styleSheet">
+             <string notr="true">border:none;</string>
+            </property>
+            <property name="text">
+             <string>Menu</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>images/MainWindow/menu.png</normaloff>
+              <normalon>images/MainWindow/menu.png</normalon>images/MainWindow/menu.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>88</width>
+              <height>15</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label_12">
+              <property name="font">
+               <font>
+                <family>Vinhan</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>............................................................................................................................................................</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>88</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonAccount">
+            <property name="styleSheet">
+             <string notr="true">border:none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>images/MainWindow/user (1).png</normaloff>
+              <normalon>images/MainWindow/user (1).png</normalon>images/MainWindow/user (1).png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>15</width>
+              <height>15</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="ViewData">
+          <widget class="QWidget" name="verticalLayoutWidget_3">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>20</y>
+             <width>161</width>
+             <height>451</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QCheckBox" name="checkBoxAll">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>All</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxCusID">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Customer ID</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxCreScore">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Credict Score</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxCountry">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Country</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxGender">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Gender</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxAge">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Age</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxTenure">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Tenure</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxBalance">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Balance</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxProNumber">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Product Number</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxCreCard">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Credict Card</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxActive">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Active Member</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxSalary">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Estimated Salary</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxChurn">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+</string>
+              </property>
+              <property name="text">
+               <string>Churn</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QPushButton" name="pushButtonViewData">
+           <property name="geometry">
+            <rect>
+             <x>610</x>
+             <y>480</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QWidget {
+	background-color: rgb(254, 190, 5);
+	color: rgb(255, 255, 255);
+	font: 75 11pt &quot;Vinhan&quot;;
+}
+
+QPushButton {
+	color:rgb(255, 255, 255);
+	font: 75 11pt &quot;Vinhan&quot;;
+	height:20px;
+	border-radius:15px;
+	border-radius:15px;
+	font-weight:bold;
+}</string>
+           </property>
+           <property name="text">
+            <string>View Data</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/MainWindow/viewdatabutton.png</normaloff>
+             <normalon>images/MainWindow/viewdatabutton.png</normalon>images/MainWindow/viewdatabutton.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>15</width>
+             <height>15</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>551</width>
+             <height>541</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+color: rgb(0,0,0);</string>
+           </property>
+           <property name="title">
+            <string>List of Data:</string>
+           </property>
+           <widget class="QTableWidget" name="tableWidgetViewData">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>531</width>
+              <height>511</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="Predict">
+          <widget class="QWidget" name="gridLayoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>30</y>
+             <width>741</width>
+             <height>311</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="14" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="styleSheet">
+               <string notr="true">font: 75 10pt &quot;Vinhan&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Esimated Salary:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="styleSheet">
+               <string notr="true">font: 75 10pt &quot;Vinhan&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Active Member:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="2">
+             <widget class="QLineEdit" name="lineEditSalary">
+              <property name="font">
+               <font>
+                <family>Vinhan</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="styleSheet">
+               <string notr="true">font: 75 10pt &quot;Vinhan&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Tenure:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_10">
+              <property name="styleSheet">
+               <string notr="true">font: 75 10pt &quot;Vinhan&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Balance:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLineEdit" name="lineEditTenure">
+              <property name="font">
+               <font>
+                <family>Vinhan</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="styleSheet">
+               <string notr="true">font: 75 10pt &quot;Vinhan&quot;;</string>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Credit Card:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="QComboBox" name="comboBoxCreditCard">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Yes</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>No</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="QComboBox" name="comboBoxActive">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Yes</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>No</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="styleSheet">
+               <string notr="true">font: 75 10pt &quot;Vinhan&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Age:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QComboBox" name="comboBoxGender">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Male</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Female</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QComboBox" name="comboBoxCountry">
+              <property name="styleSheet">
+               <string notr="true">font: 75 9pt &quot;Vinhan&quot;;</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Spain</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>France</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Germany</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="styleSheet">
+               <string notr="true">font: 75 10pt &quot;Vinhan&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Gender:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLineEdit" name="lineEditAge">
+              <property name="font">
+               <font>
+                <family>Vinhan</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_14">
+              <property name="styleSheet">
+               <string notr="true">font: 75 10pt &quot;Vinhan&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Credit Score:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLineEdit" name="lineEditCreditScore">
+              <property name="font">
+               <font>
+                <family>Vinhan</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QLineEdit" name="lineEditBalance">
+              <property name="font">
+               <font>
+                <family>Vinhan</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="styleSheet">
+               <string notr="true">font: 75 10pt &quot;Vinhan&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Country:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_13">
+              <property name="styleSheet">
+               <string notr="true">font: 75 10pt &quot;Vinhan&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Products Number:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="QLineEdit" name="lineEditProductsNumber">
+              <property name="font">
+               <font>
+                <family>Vinhan</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QPlainTextEdit" name="plainTextEditResult">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>440</y>
+             <width>741</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 170, 127);
+font: 75 10pt &quot;Vinhan&quot;;
+color: rgb(0, 0, 0);</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="horizontalLayoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>350</y>
+             <width>281</width>
+             <height>71</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QPushButton" name="pushButtonResultClear">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 15pt &quot;Vinhan&quot;;
+	height:50px;
+	border:none;
+	border-radius:20px;
+	border-radius:20px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>CLEAR</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>images/MainWindow/clear.png</normaloff>
+                <normalon>images/MainWindow/clear.png</normalon>images/MainWindow/clear.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonResultPredict">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 15pt &quot;Vinhan&quot;;
+	height:50px;
+	border:none;
+	border-radius:20px;
+	border-radius:20px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>PREDICT</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>images/MainWindow/predictbutton.png</normaloff>
+                <normalon>images/MainWindow/predictbutton.png</normalon>images/MainWindow/predictbutton.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="Chart">
+          <widget class="QGroupBox" name="groupBox">
+           <property name="geometry">
+            <rect>
+             <x>9</x>
+             <y>10</y>
+             <width>161</width>
+             <height>511</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+color: rgb(0,0,0);</string>
+           </property>
+           <property name="title">
+            <string>Function:</string>
+           </property>
+           <widget class="QWidget" name="verticalLayoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>151</width>
+              <height>481</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QPushButton" name="pushButtonCreditScore">
+               <property name="font">
+                <font>
+                 <family>Vinhan</family>
+                 <pointsize>10</pointsize>
+                 <weight>9</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 10pt &quot;Vinhan&quot;;
+	height:20px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Credit Score</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonCountry">
+               <property name="font">
+                <font>
+                 <family>Vinhan</family>
+                 <pointsize>10</pointsize>
+                 <weight>9</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 10pt &quot;Vinhan&quot;;
+	height:20px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonChurnByGender">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 10pt &quot;Vinhan&quot;;
+	height:20px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Churn By Gender</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonAge">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 10pt &quot;Vinhan&quot;;
+	height:20px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Age</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonTenure">
+               <property name="font">
+                <font>
+                 <family>Vinhan</family>
+                 <pointsize>10</pointsize>
+                 <weight>9</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 10pt &quot;Vinhan&quot;;
+	height:20px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Tenure</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonChurnByProductsNumber">
+               <property name="font">
+                <font>
+                 <family>Vinhan</family>
+                 <pointsize>10</pointsize>
+                 <weight>9</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 10pt &quot;Vinhan&quot;;
+	height:20px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Churn by product number</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonChurnByCreditCard">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 10pt &quot;Vinhan&quot;;
+	height:20px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Churn by credit Card</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonChurnByActiveMember">
+               <property name="font">
+                <font>
+                 <family>Vinhan</family>
+                 <pointsize>10</pointsize>
+                 <weight>9</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 10pt &quot;Vinhan&quot;;
+	height:20px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Churn by active Member</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonChurn">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 10pt &quot;Vinhan&quot;;
+	height:20px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Churn</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>10</y>
+             <width>651</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+color: rgb(0,0,0);</string>
+           </property>
+           <property name="title">
+            <string>List of Data:</string>
+           </property>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>631</width>
+              <height>121</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>160</y>
+             <width>651</width>
+             <height>361</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+color: rgb(0,0,0);</string>
+           </property>
+           <property name="title">
+            <string>Chart Visualization:</string>
+           </property>
+           <widget class="QWidget" name="verticalLayoutWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>631</width>
+              <height>331</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7"/>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="Infor">
+          <widget class="QWidget" name="horizontalLayoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>470</y>
+             <width>571</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QPushButton" name="pushButtonImport">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 12pt &quot;Vinhan&quot;;
+	height:30px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Import</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>images/MainWindow/import.png</normaloff>
+                <normalon>images/MainWindow/import.png</normalon>images/MainWindow/import.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>16</width>
+                <height>16</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonPredictcsv">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 12pt &quot;Vinhan&quot;;
+	height:30px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Predict</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>images/MainWindow/train.png</normaloff>
+                <normalon>images/MainWindow/train.png</normalon>images/MainWindow/train.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>18</width>
+                <height>18</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonSave">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(254, 190, 5);
+	color:rgb(255, 255, 255);
+	text-align:center;
+	font: 75 12pt &quot;Vinhan&quot;;
+	height:30px;
+	border:none;
+	border-radius:10px;
+	border-radius:10px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Save</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>images/MainWindow/save (2).png</normaloff>
+                <normalon>images/MainWindow/save (2).png</normalon>images/MainWindow/save (2).png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>16</width>
+                <height>16</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>731</width>
+             <height>431</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 9pt &quot;Vinhan&quot;;
+color: rgb(0,0,0);</string>
+           </property>
+           <property name="title">
+            <string>General Table</string>
+           </property>
+           <widget class="QTableWidget" name="tableWidgetView">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>711</width>
+              <height>401</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>987</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSystem">
+    <property name="title">
+     <string>System</string>
+    </property>
+    <addaction name="actionConnect_Database"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_New_Train_Model"/>
+    <addaction name="separator"/>
+    <addaction name="actionLoad_Trained_Model"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit_2"/>
+   </widget>
+   <addaction name="menuSystem"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionImport_from_JSon">
+   <property name="text">
+    <string>Import from JSon</string>
+   </property>
+  </action>
+  <action name="actionExport_from_JSon">
+   <property name="text">
+    <string>Export from JSon</string>
+   </property>
+  </action>
+  <action name="actionConnect_Database">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/MainWindow/connect.png</normaloff>images/MainWindow/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Connect Database</string>
+   </property>
+  </action>
+  <action name="actionImport_from_CSV">
+   <property name="icon">
+    <iconset>
+     <normaloff>DoAn/images/MainWindow/import.png</normaloff>DoAn/images/MainWindow/import.png</iconset>
+   </property>
+   <property name="text">
+    <string>Import from CSV</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSave_New_Train_Model">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/MainWindow/save (2).png</normaloff>images/MainWindow/save (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>Train New Model and Save</string>
+   </property>
+  </action>
+  <action name="actionLoad_Trained_Model">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/MainWindow/load.png</normaloff>images/MainWindow/load.png</iconset>
+   </property>
+   <property name="text">
+    <string>Load Trained Model</string>
+   </property>
+  </action>
+  <action name="actionExit_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/MainWindow/exit.png</normaloff>images/MainWindow/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonMenu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>IconOnly</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>29</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonMenu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>IconName</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>126</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonViewIcon</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButtonView</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>29</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>100</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonView</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButtonViewIcon</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>23</x>
+     <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionExit_2</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>338</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonChart</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButtonChartIcon</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>22</x>
+     <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonChartIcon</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButtonChart</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>15</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>69</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonPredict</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButtonPredictIcon</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>14</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonPredictIcon</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButtonPredict</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>69</x>
+     <y>108</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonGeneralicon</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButtonGeneral</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>157</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonGeneral</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButtonGeneralicon</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>19</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
