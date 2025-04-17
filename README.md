@@ -41,4 +41,4 @@ python main.py
 - Lê Nguyễn Minh Thảo
 
 ---
-*University of Economics and Laws, Vietnam National University HCMC*
+*University of Economics and Law, Vietnam National University HCMC*
